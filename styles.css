@@ -1,106 +1,276 @@
 <!DOCTYPE html>
 <link rel="stylesheet" href="css/estilos.css">
 
-/* Estilo general */
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-    color: white;
-    margin: 0;
-    padding: 20px;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-/* Títulos */
-h1 {
-    text-align: center;
-    color: #00d4ff;
-    font-size: 50px;
-    text-shadow: 2px 2px 5px black;
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:linear-gradient(135deg,#0F172A,#1E3A8A,#111827);
+    color:white;
+    line-height:1.8;
 }
 
-h2 {
-    color: gold;
-    border-bottom: 2px solid gold;
-    padding-bottom: 5px;
+/* ===========================
+Stilos Navbar
+=========================== */
+
+.navbar{
+
+    display:flex;
+
+    flex=direction:row;
+
+    justify=content:space=between;
+
+    align-itns:center;
+    
+
+    background: #111827);
+
+    padding: 15px 30px;
+
+    border=radius:12px;
+
+    flex=wrap:wrap;
+
+    gap: 15px;
 }
 
-h3 {
-    color: #ddd;
-    font-weight: normal;
+/* ===========================
+   TITULO
+=========================== */
+
+h1{
+    text-align:center;
+    font-size:55px;
+    color:#FFD700;
+    margin:30px;
+    text-transform:uppercase;
+    letter-spacing:3px;
+    text-shadow:0 0 20px gold;
 }
 
-/* Párrafo */
-p {
-    font-size: 18px;
-    text-align: justify;
-    background: rgba(255,255,255,0.1);
-    padding: 15px;
-    border-left: 5px solid #00d4ff;
-    border-radius: 10px;
+h2{
+    color:#00E5FF;
+    margin-bottom:15px;
 }
 
-/* Texto en negritas */
-b {
-    display: block;
-    margin: 20px 0;
-    background-color: rgba(255,255,255,0.15);
-    padding: 15px;
-    border-radius: 10px;
-    line-height: 1.6;
+h3{
+    color:#d8d8d8;
+    font-weight:300;
+    margin-bottom:10px;
 }
 
-/* Secciones */
-section {
-    background: rgba(255,255,255,0.1);
-    margin: 25px 0;
+/* ===========================
+   PARRAFOS
+=========================== */
+
+p{
+    width:80%;
+    margin:auto;
+    background:#ffffff15;
+    padding:20px;
+    border-radius:15px;
+    text-align:justify;
+    backdrop-filter:blur(8px);
+}
+
+/* ===========================
+   TEXTO EN NEGRITAS
+=========================== */
+
+b{
+    display:block;
+    width:80%;
+    margin:30px auto;
+    padding:20px;
+    border-left:6px solid #FFD700;
+    background:#ffffff10;
+    border-radius:10px;
+    font-size:18px;
+}
+
+/* ===========================
+   SECCIONES
+=========================== */
+
+section{
+    width:85%;
+    margin:40px auto;
+    background:#ffffff10;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.4);
+    transition:.4s;
+}
+
+section:hover{
+    transform:translateY(-8px);
+}
+
+/*== Servicios ==*/
+
+servicios{
+    padding: 30 px;
+    background-color: #31adf9
+    border-radius: 15px;
+}
+
+.contenedor-servicios{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tarjeta{
+    width: 220px;
+    background: rgb(0, 0, 0);
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    box-shadow: 0 4px 10px rgba(0,0,0,.2);
+    text-align: center;
 }
 
-/* Enlace */
-a {
-    display: inline-block;
-    text-decoration: none;
-    background-color: #00d4ff;
-    color: black;
-    padding: 10px 20px;
-    border-radius: 8px;
-    font-weight: bold;
+.elegirnos{
+    background: #1b3f7a;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #d4a017;
+}
+
+.elegirnos h2{
+    color: #f7c948;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #f7c948;
+    padding-bottom: 10px;
+}
+
+.contenedor-tarjeta{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tarjeta{
+    width: 250px;
+    background: #2d5aa7;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #f7c948;
+    box-shadow: 0 0 15px rgba(247, 201, 72, 0.3);
+    text-align: center;
+    color: white;
     transition: 0.3s;
 }
 
-a:hover {
-    background-color: gold;
-    transform: scale(1.05);
+.tarjeta.hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(247, 201, 72, 0.7);
 }
 
-/* Imagen */
-img {
-    display: block;
-    margin: 20px auto;
-    width: 300px;
-    border-radius: 15px;
-    border: 4px solid white;
-    box-shadow: 0 0 20px black;
+.tarjeta p{
+    color: #ffffff;
 }
 
-/* Lista */
-ul {
-    list-style-type: square;
-    padding-left: 20px;
+/* elegirnos*/
+
+.elegirnos{
+    background: #1b3f7a;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-li {
-    margin: 8px 0;
+.contenedor-cuadros{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-/* Pie de página */
-footer {
+.cuadro{
+    width: 250px;
+    background: rgb(68, 78, 188);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(226, 131, 218, 0.2);
     text-align: center;
-    background-color: black;
-    color: white;
-    padding: 15px;
-    margin-top: 30px;
-    border-top: 3px solid #00d4ff;
+}
+
+.cuadro h3{
+    margin-bottom: 15px;
+}
+
+/* ===========================
+   BOTON
+=========================== */
+
+a{
+    display:inline-block;
+    margin-bottom:20px;
+    padding:12px 25px;
+    background:#FFD700;
+    color:black;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:bold;
+    transition:.4s;
+}
+
+a:hover{
+    background:#00E5FF;
+    transform:scale(1.1);
+}
+
+/* ===========================
+   IMAGEN
+=========================== */
+
+img{
+    display:block;
+    margin:20px auto;
+    width:350px;
+    border-radius:20px;
+    border:5px solid white;
+    transition:.5s;
+    box-shadow:0 0 25px rgba(0,0,0,.7);
+}
+
+img:hover{
+    transform:scale(1.08) rotate(2deg);
+}
+
+/* ===========================
+   LISTAS
+=========================== */
+
+ul{
+    margin-left:30px;
+    margin-top:15px;
+}
+
+li{
+    margin:10px;
+    color:#FFD700;
+}
+
+/* ===========================
+   FOOTER
+============================ */
+
+footer{
+    background:#000;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+    font-size:18px;
 }
