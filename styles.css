@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<link rel="stylesheet" href="css/estilos.css">
-
 *{
     margin:0;
     padding:0;
@@ -20,27 +17,40 @@ Stilos Navbar
 =========================== */
 
 .navbar{
-
     display:flex;
-
-    flex=direction:row;
-
-    justify=content:space=between;
-
-    align-itns:center;
-    
-
-    background: #111827);
-
+    flex-direction:row;
+    justify-content:space-between;
+    background: #1E3A8A;
     padding: 15px 30px;
-
-    border=radius:12px;
-
-    flex=wrap:wrap;
-
+    border-radius:12px;
+    flex-wrap:wrap;
     gap: 15px;
 }
 
+.navbar .logo{
+    color: #d4a017;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.nav-links a:hover{
+    color: #f7c948
+}
 /* ===========================
    TITULO
 =========================== */
@@ -115,28 +125,13 @@ section:hover{
 
 /*== Servicios ==*/
 
-servicios{
-    padding: 30 px;
-    background-color: #31adf9
-    border-radius: 15px;
-}
-
 .contenedor-servicios{
     display: flex;
     justify-content: space-around;
     gap: 20px;
     flex-wrap: wrap;
 }
-
-.tarjeta{
-    width: 220px;
-    background: rgb(0, 0, 0);
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0,0,0,.2);
-    text-align: center;
-}
-
+/* Sireve*/
 .elegirnos{
     background: #1b3f7a;
     padding: 20px;
@@ -171,7 +166,7 @@ servicios{
     transition: 0.3s;
 }
 
-.tarjeta.hover{
+.tarjeta:hover{
     transform: translateY(-5px);
     box-shadow: 0 0 20px rgba(247, 201, 72, 0.7);
 }
@@ -180,13 +175,24 @@ servicios{
     color: #ffffff;
 }
 
-/* elegirnos*/
-
-.elegirnos{
-    background: #1b3f7a;
-    padding: 20px;
-    border-radius: 10px;
+/* Computadora*/
+.tarjeta p{
+    background-color:rgb(53, 248, 141);
+    color: #000;
+    padding: 10px;
 }
+
+/* Celulares*/
+@media (max-width: 769px) {
+    .tarjeta p{
+        background-color: #d4a017;
+        color: #000;
+    }
+}
+
+
+
+/* elegirnos*/
 
 .contenedor-cuadros{
     display: flex;
@@ -252,14 +258,12 @@ img:hover{
    LISTAS
 =========================== */
 
-ul{
-    margin-left:30px;
-    margin-top:15px;
-}
-
-li{
-    margin:10px;
-    color:#FFD700;
+.listas{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    color: #d4a017;
 }
 
 /* ===========================
