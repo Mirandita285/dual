@@ -266,6 +266,33 @@ img:hover{
     color: #d4a017;
 }
 
+
+/*Hola mundo javascript*/
+
+.btnSaludar {
+    background-color: #1b3f7a;
+    color: white;
+    padding: 10px 20px;
+    border: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#btnSaludar:hover{
+    background-color: aquamarine;
+}
+
+#contacto{
+    background-color: rgb(0, 0, 0);
+    color:white;
+    padding: 10px 20px;
+    border-radius: 8px ;
+}
+
+#contacto:hover{
+    background-color: blue;
+}
+
 /* ===========================
    FOOTER
 ============================ */
