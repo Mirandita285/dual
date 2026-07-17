@@ -8,9 +8,12 @@ document.getElementById("contacto").addEventListener("click", function() {
 
 //ejercisios
 
-let nombre = "Alexys";
-let edad = 17;
-const empresa = "JC Desarrollo Web";
+let nombre = "Alexys";                      //string
+let edad = 17;                              //number
+const empresa = "JC Desarrollo Web";        //boolean
+let promedio = 9.5;                         // float
+let estudiante = true;                      // boolean
+let dato = null;                            // null
 
 // Realiza,os una operacion
 
